@@ -14,7 +14,6 @@
 }
 
 .header {
-  height: 100px;
   line-height: 100px;
 }
 
@@ -39,6 +38,7 @@ ul {
 ul li {
   list-style-type: none;
   margin: 0 15px;
+  cursor: pointer;
 }
 
 ul li a {
@@ -55,6 +55,9 @@ ul li a:hover {
   display: none;
 }
 
+.li-active {
+  color: rgba(0,0,0,0.8);
+}
 .active {
   display: block;
 }
@@ -63,31 +66,19 @@ ul li a:hover {
 /*** NAVBAR ***/
 
 /* Left Side */
-.left .logo {
-  line-height: 100px;
-
-}
-
 .left .logo img{
   height: 25px;
 }
 /* End Left Side */
 
 /* Right Side */
-
 .right ul {
   justify-content: flex-end;
 }
-
 .right ul li{
   color: rgba(0,0,0,0.3);
 }
-.right ul li span:hover {
-  color: rgba(0,0,0,0.8);
-  cursor: pointer;
-  transition: 0.2s;
-}
-.right ul li span.button a{
+.button a{
   color: white;
   background-color: #eb0d91;
   border-radius: 15px;
